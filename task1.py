@@ -1,1 +1,1 @@
-hello
+proint(hello)
