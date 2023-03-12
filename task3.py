@@ -1,5 +1,5 @@
 def my_func(num1, num2, num3):
-    my_list = list([num1, num2, num3])
+    my_list = list(map(float, [num1, num2, num3])
     try:
         my_list.remove(min(my_list))
         return sum(my_list)
