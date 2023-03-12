@@ -6,4 +6,4 @@ def my_func(num1, num2, num3):
         return sum(my_list)
     except (TypeError,ValueError):
         return 'Вводите только цифры'
-print(my_func(int(input('Введите первое значение: ')), int(input('Введите второе значение: ')), int(input('Введите третье значение: '))))
+print(my_func(input('Введите первое значение: '), input('Введите второе значение: '), input('Введите третье значение: ')))
