@@ -1,10 +1,12 @@
-users_num = int(input('Введите числитель: '))
-users_den = int(input('Введите знаменатель: '))
-
-def devision_users_num(num1, num2):
-    result = num1/num2
-    if num2 == 0:
-        print('Делить на ноль нельзя')
-    else:
-        print(result)
-print(devision_users_num(users_num, users_den))
+user_num = input('Введите значение числителя: ')
+user_den = input('Введите значение знаменателя: ')
+def division_users_num(num, den):
+    try:
+        num, den = int(num), int(den)
+        div_users_num = num / den
+    except ValueError:
+        return 'Value Error'
+    except ZeroDivisionError:
+        return "На ноль делить нельзя!"
+    return div_users_num
+print(division_users_num(user_num, user_den))
